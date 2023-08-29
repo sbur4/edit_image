@@ -1,0 +1,55 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.projectlombok/lombok
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.28'
+
+    //  todo google guava can't read/write images
+    // https://mvnrepository.com/artifact/com.google.guava/guava
+    implementation group: 'com.google.guava', name: 'guava', version: '32.1.1-jre'
+
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-imaging
+    implementation group: 'org.apache.commons', name: 'commons-imaging', version: '1.0-alpha3'
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    implementation group: 'commons-io', name: 'commons-io', version: '2.13.0'
+
+    //  todo doesn't work
+    // https://mvnrepository.com/artifact/com.github.downgoon/MarvinFramework
+    implementation group: 'com.github.downgoon', name: 'MarvinFramework', version: '1.5.5'
+    // https://mvnrepository.com/artifact/com.github.downgoon/MarvinPlugins
+    implementation group: 'com.github.downgoon', name: 'MarvinPlugins', version: '1.5.5'
+
+    // https://mvnrepository.com/artifact/org.imgscalr/imgscalr-lib
+    implementation group: 'org.imgscalr', name: 'imgscalr-lib', version: '4.2'
+
+    // https://mvnrepository.com/artifact/net.coobird/thumbnailator
+    implementation group: 'net.coobird', name: 'thumbnailator', version: '0.4.20'
+
+    // https://mvnrepository.com/artifact/com.twelvemonkeys.imageio/imageio-core
+    implementation group: 'com.twelvemonkeys.imageio', name: 'imageio-core', version: '3.9.4'
+    // https://mvnrepository.com/artifact/com.twelvemonkeys.common/common-image
+    implementation group: 'com.twelvemonkeys.common', name: 'common-image', version: '3.9.4'
+    // https://mvnrepository.com/artifact/com.twelvemonkeys.common/common-io
+    implementation group: 'com.twelvemonkeys.common', name: 'common-io', version: '3.9.4'
+    // https://mvnrepository.com/artifact/com.twelvemonkeys.imageio/imageio
+    implementation group: 'com.twelvemonkeys.imageio', name: 'imageio', version: '3.9.4', ext: 'pom'
+    // https://mvnrepository.com/artifact/com.twelvemonkeys.imageio/imageio-webp
+    implementation group: 'com.twelvemonkeys.imageio', name: 'imageio-webp', version: '3.9.4'
+
+    implementation group: 'com.sksamuel.scrimage', name: 'scrimage-core', version: '4.0.39'
+    implementation group: 'com.sksamuel.scrimage', name: 'scrimage-webp', version: '4.0.39'
+}
+
+
+test {
+    useJUnitPlatform()
+}
