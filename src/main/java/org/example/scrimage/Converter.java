@@ -10,7 +10,8 @@ import java.util.Arrays;
 
 public class Converter {
     public static void main(String[] args) throws IOException {
-        File inputFile = new File("examples/starbucks_logo.png");
+//        File inputFile = new File("examples/starbucks_logo.png");
+        File inputFile = new File("examples/hogwarts_legacy_hd.jpg");
         converterWebpDefault(inputFile);
         /// PNG 5000x5000 32-bit 980.68kB
         /// WEBP 5000x5000 32-bit 282.95kB
